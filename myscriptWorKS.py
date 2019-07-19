@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-myPATH = "C://Users//SEAB//Desktop//postcardImages//" + "postcard" + str(2) + "Back.jpg"
+myPATH = "C://Users//SEAB//Desktop//postcardImages//" + "postcard" + str(22) + "Back.jpg"
 img = cv2.imread(myPATH,0)
 img = cv2.medianBlur(img,5)
 cimg = cv2.cvtColor(img,cv2.COLOR_GRAY2BGR)
@@ -9,7 +9,7 @@ cimg = cv2.cvtColor(img,cv2.COLOR_GRAY2BGR)
 minDist = 50
 minimumRadius = 40
 maximumRadius = 300
-parameter2 = 90
+parameter2 = 80
 parameter1 = 100
 circles = cv2.HoughCircles(img,cv2.HOUGH_GRADIENT,1,minDist, param1 = parameter1, param2= parameter2, minRadius = minimumRadius,
 maxRadius = maximumRadius)

@@ -1,12 +1,12 @@
 import cv2
 import numpy as np
-myPATH = "C://Users//SEAB//Desktop//postcardImages//" + "postcard" + str(22) + "Back.jpg"
+myPATH = "C://Users//SEAB//Desktop//postcardImages//" + "postcard" + str(1) + "Back.jpg"
 img = cv2.imread(myPATH,0)
 img = cv2.medianBlur(img,5)
 cimg = cv2.cvtColor(img,cv2.COLOR_GRAY2BGR)
 #strategy: first set most generous parameters, try to find circles. If not circles found return none. If 1-4 circles found, return this.
 #If more than 4 circles found, make parameters tigether.
-minDist = 50
+minDist = 100
 minimumRadius = 40
 maximumRadius = 300
 parameter2 = 80

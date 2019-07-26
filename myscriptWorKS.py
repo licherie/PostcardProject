@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-for i in range(700,720):
+for i in range(666,667):
     myPATH = "C://Users//SEAB//Desktop//postcardImages//newPostcardList//" + "postcard" + str(i) + "Back.jpg"
     img = cv2.imread(myPATH,0)
     if img is not None:

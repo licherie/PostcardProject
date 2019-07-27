@@ -80,4 +80,6 @@ def findCircles(number):
             cv2.imshow('detected circles',cimg)
             cv2.waitKey(0)
             cv2.destroyAllWindows()
+            mySavePATH2 = "C://Users//SEAB//Desktop//postcardImages//newPostcardList//" + "postcard" + str(number) + "BackChecked2.jpg"
+            cv2.imwrite(mySavePATH2,cimg)
         return numberFound1,numberFound2

@@ -1,5 +1,5 @@
 # PostcardProject
-Goal: Automatically name postcards for Ebay Listing based on scanned images 
+Goal: Automatically name postcards for eBay listing based on scanned images 
 
 Stages of project
 

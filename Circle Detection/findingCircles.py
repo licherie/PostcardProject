@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-for i in range(666,667):
+for i in range(41,42):
     myPATH = "C://Users//SEAB//Desktop//postcardImages//newPostcardList//" + "postcard" + str(i) + "Back.jpg"
     img = cv2.imread(myPATH,0)
     if img is not None:
@@ -51,8 +51,6 @@ for i in range(666,667):
                         minimumRadius = minimumRadius + 10
                 parameter2 = 80
                 parameter1 = parameter1 - 10
-
-                
         if circles is not None:
             for j in circles[0,:]:
             # draw the outer circle
@@ -61,6 +59,7 @@ for i in range(666,667):
                 cv2.circle(cimg,(j[0],j[1]),2,(0,0,255),3)
             cv2.imshow('detected circles',cimg)
             print(str(i))
+            print(circles)
             cv2.waitKey(0)
             cv2.destroyAllWindows()
             mySavePATH = "C://Users//SEAB//Desktop//postcardImages//newPostcardList//" + "postcard" + str(i) + "BackChecked.jpg"
